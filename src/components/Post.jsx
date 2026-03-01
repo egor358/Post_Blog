@@ -9,7 +9,7 @@ export const Post = ({ cover, content, title, id }) => {
       </div>
       <div className="post__content">
         <h2>{title}</h2>
-        <p>{content}</p>
+        <p>{content.slice(0, 50)}...</p>
         <p>
           <Link to={`post/${id}`}>Read more</Link>
         </p>

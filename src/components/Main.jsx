@@ -36,7 +36,7 @@ console.log(posts);
             <div className="posts_row">
               <div className="posts-wrapper">
                 {loading ? <Preloader /> : <ProductList posts={posts} />}
-                {posts.length === 0 && "постов нет"}
+                {!loading && posts.length === 0 && "постов нет"}
               </div>
             </div>
           </div>
